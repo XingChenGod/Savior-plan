@@ -1,0 +1,237 @@
+/*--头部 开始--*/
+#header-register{
+    width: 100%;
+    height: 65px;
+    box-shadow: 0 1px 2px gray;
+}
+#header-register .wrap{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+#header-register .wrap .log{
+    position: relative;
+    top: 50%;
+    transform: translate(0 , -50%);
+}
+#header-register .wrap .header-reg-homepage{
+    margin-left: 50px;
+}
+#header-register .wrap div{
+    position: relative;
+    top: 50%;
+    transform: translate(0 , -50%);
+    margin: 0 15px;
+    color: #48576A;
+    cursor: pointer;
+}
+#header-register .wrap div::before{
+    content: "";
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: -1px;
+    width: 100%;
+    height: 65px;
+    border-bottom: 2px solid red;
+    transition: all 1s;
+    z-index: -1;
+}
+#header-register .wrap div:hover::before{
+    display: block;
+}
+#header-register .wrap div:hover{
+    color: red;
+}
+#header-register .wrap .h-nav{
+    position: relative;
+    top: 50%;
+    transform: translate(0 , -50%);
+}
+#header-register .wrap .h-nav li{
+    display: inline-block;
+    position: relative;
+    margin: 0 20px;
+    color: #48576A;
+    cursor: pointer;
+}
+#header-register .wrap .h-nav li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+#header-register .wrap .h-nav li::before{
+    content: "";
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: -1px;
+    width: 100%;
+    height: 65px;
+    border-bottom: 2px solid red;
+    transition: all 1s;
+    z-index: -1;
+}
+#header-register .wrap .h-nav li:hover::before{
+    display: block;
+}
+#header-register .wrap .h-nav li:hover{
+    color: red;
+}
+/*--注册 开始--*/
+#register{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 420px;
+    box-shadow: 0 0 2px gray;
+}
+#register .reg-title{
+    width: 300px;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+#register #register-form{
+    position: relative;
+    width: 300px;
+    margin: 20px auto;
+}
+#register #register-form input{
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    outline: none;
+    border: 1px solid #dddddd;
+    text-indent: 5px;
+}
+#register #register-form input:focus{
+    border-color: red;
+}
+#register #register-form .reg-tip-right{
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: -30px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    background: #36965F;
+}
+#register #register-form .reg-tip-error{
+    display: none;
+    position: absolute;
+    top: 50px;
+    width: 300px;
+    height: 18px;
+    color: red;
+    font-size: 14px;
+}
+#register #register-form .reg-tip-right1{
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: -30px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    background: #36965F;
+}
+#register #register-form .reg-tip-error1{
+    display: none;
+    position: absolute;
+    top: 100px;
+    width: 300px;
+    height: 18px;
+    color: red;
+    font-size: 14px;
+}
+#register #register-form .reg-tip-right2{
+    display: none;
+    position: absolute;
+    top: 130px;
+    right: -30px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    background: #36965F;
+}
+#register #register-form .reg-tip-error2{
+    display: none;
+    position: absolute;
+    top: 153px;
+    width: 300px;
+    height: 18px;
+    color: red;
+    font-size: 14px;
+}
+#register #register-form .reg-tip-right3{
+    display: none;
+    position: absolute;
+    top: 182px;
+    right: -30px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    background: #36965F;
+}
+#register #register-form .reg-tip-error3{
+    display: none;
+    position: absolute;
+    top: 205px;
+    width: 300px;
+    height: 18px;
+    color: red;
+    font-size: 14px;
+}
+#register #register-form .reg-indentify{
+    width: 150px;
+}
+#register #register-form .reg-img-indentify{
+    position: absolute;
+    right: 0;
+    top: 230px;
+    cursor: pointer;
+}
+#register #register-form .reg-message{
+    width: 150px;
+}
+#register #register-form .reg-message-click{
+    position: absolute;
+    right: 0;
+    top: 280px;
+    width: 120px;
+    height: 30px;
+    box-shadow: 0 0 1px gray;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    background: #36965F;
+    cursor: pointer;
+}
+#register #reg-btn{
+    width: 150px;
+    height: 30px;
+    margin: 0 auto 20px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    background: red;
+    border-radius: 10px;
+    cursor: pointer;
+}

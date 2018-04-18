@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/personal.css">
+</head>
+<body>
+<!--头部开始-->
+<header id="header-personal">
+    <div class="wrap clearfix">
+        <img class="log fl" src="img/logo.png" alt="">
+        <div class="header-homepage fl">
+            <a href="#">首页</a>
+        </div>
+        <div class="header-section fl">
+            <a href="#">知识体系</a>
+        </div>
+        <div class="header-homepage fl">
+            <a href="#">活动</a>
+        </div>
+        <div class="header-section fl">
+            <a href="#">文章</a>
+        </div>
+        <div class="header-section fl">
+            <a href="#">题目</a>
+        </div>
+        <ul class="h-nav fr">
+            <li class="h-personal">
+                <div class="h-personal-nav">
+                    <p><a href="#">个人中心</a></p>
+                    <p><a href="#">退出</a></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+<!--个人中心 开始-->
+<section id="personal" class="clearfix">
+    <div class="per-left fl">
+        <div class="per-l-info">
+            <div class="per-l-info-log">
+                <img src="img/personal/personal-big.png" style="width: 127px;height: 128px" alt="">
+                <p class="per-info-nickname">昵称</p>
+                <p class="per-info-signature">这个人很懒什么都没写</p>
+                <input class="per-info-signature" type="text" placeholder="请输入签名">
+            </div>
+        </div>
+        <div class="per-l-nav">
+            <ul>
+                <li class="on">我的信息</li>
+                <li>修改密码</li>
+                <li>我的文章</li>
+                <li>我的收藏</li>
+                <li>我的消息</li>
+            </ul>
+        </div>
+    </div>
+    <div class="per-right fr">
+        <div class="per-r-info item active">
+            <h4>个人信息</h4>
+            <div class="per-r-info-log clearfix">
+                <img class="fl" src="img/personal/personal-big.png" style="width: 60px;height: 60px;" alt="">
+                <p class="fl">
+                    更换头像
+                    <input type="file" multiple="multiple">
+                </p>
+            </div>
+            <div class="per-r-info-basic" style="margin-top: 20px">
+                <div class="tel clearfix">
+                    <p class="fl" style="margin-right: 20px;font-weight: bold">注册手机号</p>
+                    <p class="basic-tel fl">13011072992</p>
+                </div>
+                <div class="nickname clearfix" style="margin-top: 20px">
+                    <p class="fl" style="margin-right: 20px;font-weight: bold">昵称</p>
+                    <input class="basic-nickname fl" id="basic-nickname" type="text">
+                </div>
+                <div class="sex" style="margin-top: 20px;">
+                    <span style="font-weight: bold;margin-right: 20px;">性别</span>
+                    <input  type="radio" name="sex" id="man">
+                    <label for="man" style="cursor: pointer">男</label>
+                    <input style="margin-left: 10px;" type="radio" name="sex" id="woman">
+                    <label for="woman" style="cursor: pointer">女</label>
+                </div>
+            </div>
+            <div class="per-r-info-btn per-r-btn" id="per-r-info-submit">提交</div>
+        </div>
+        <div class="per-r-revisepwd item">
+            <h4>修改密码</h4>
+            <div class="tel clearfix">
+                <p class="fl">手机号码：</p>
+                <input class="fl" id="tel" type="text" placeholder="请输入手机号码">
+            </div>
+            <div class="newpwd clearfix">
+                <p class="fl">新密码：</p>
+                <input class="fl" id="newpwd" type="password" placeholder="请输入新密码">
+            </div>
+            <div class="newpwd-again clearfix">
+                <p class="fl">确认密码：</p>
+                <input class="fl" id="newpwd-again" type="password" placeholder="请再次输入密码">
+            </div>
+            <div class="check clearfix">
+                <p class="fl">验证码：</p>
+                <input class="fl" id="check" type="text" placeholder="请输入验证码">
+                <div class="revise-btn fl">
+                    获取验证码
+                </div>
+            </div>
+            <div class="per-r-revise-btn per-r-btn" id="per-r-revise-submit">提交</div>
+        </div>
+        <div class="per-r-essay-article item">
+            <div class="per-r-essay-wrap clearfix">
+                <div class="per-r-essay-title fl">
+                    主题
+                </div>
+                <ul class="fr clearfix">
+                    <li>分类</li>
+                    <li>回复</li>
+                    <li>浏览</li>
+                    <li>发布时间</li>
+                    <li>操作</li>
+                </ul>
+            </div>
+        </div>
+        <div class="per-r-collect-article item">
+            <div class="per-r-essay-wrap clearfix">
+                <div class="per-r-essay-title fl">
+                    主题
+                </div>
+                <ul class="fr clearfix">
+                    <li>分类</li>
+                    <li>回复</li>
+                    <li>浏览</li>
+                    <li>发布时间</li>
+                    <li>操作</li>
+                </ul>
+            </div>
+        </div>
+        <div class="per-r-message item">
+            <div class="per-r-mes-none" style="display: none">
+                <img src="img/personal/personal-none.png" style="margin: auto" alt="">
+                <p>这里还木有内容哦</p>
+            </div>
+            <div class="per-r-mes-comment" style="display: block;">
+                <h3>收到评论</h3>
+                <ul>
+                    <li>
+                        <div class="per-r-com-user-title clearfix">
+                            <img class="fl" src="img/personal/personal.png" style="width: 52px;height: 52px" alt="">
+                            <span class="nickname fl">嘻嘻哈哈</span>
+                            <span class="fixed fl">评论了你的文章</span>
+                            <span class="per-article fl">《APP性能优化方案》</span>
+                        </div>
+                        <div class="per-r-com-time">
+                            2017-10-30&nbsp;&nbsp;8:20
+                        </div>
+                        <p class="per-r-com-content">优化极致！</p>
+                        <div class="per-r-com-enter clearfix">
+                            <span class="per-answer fl">回复</span>
+                            <span class="per-session fl">查看对话</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/personal.js"></script>
+</body>
+</html>

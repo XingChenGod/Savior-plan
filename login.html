@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/login.css">
+</head>
+<body>
+<!--头部开始-->
+<header id="header-login">
+    <div class="wrap clearfix">
+        <img class="log fl" src="img/logo.png" alt="">
+        <div class="header-homepage fl">
+            <a href="#">首页</a>
+        </div>
+        <div class="header-section fl">
+            <a href="#">知识体系</a>
+        </div>
+        <ul class="h-nav fr">
+            <li><a href="./login.html">登录</a></li>
+            <li><a href="./register.html">注册</a></li>
+        </ul>
+    </div>
+</header>
+<!--登录页 start-->
+<div id="login">
+    <p class="log-header">
+        欢迎回到猿计划
+    </p>
+    <form action="" id="login-form">
+        <input type="text" class="user-name" placeholder="请输入登录手机">
+        <p class="tip-right">√</p>
+        <p class="tip-error">*错误：您输入的账号格式错误</p>
+        <input type="password" class="user-pwd" placeholder="6-16密码，区分大小写，不能用空格">
+        <p class="login-text clearfix">
+            <span class="log-t-auto fl">
+                <input type="checkbox" id="login-auto">
+                <label for="login-auto" class="check">下次自动登录</label>
+            </span>
+            <span class="log-t-search fr">
+                <a href="#">
+                    忘记密码？
+                </a>
+                <a href="./register.html" class="log-t-s-sigin" style="color: red">
+                    立即注册
+                </a>
+            </span>
+        </p>
+    </form>
+    <div id="submit">
+        登录
+    </div>
+</div>
+<script src="js/login.js"></script>
+</body>
+</html>

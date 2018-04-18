@@ -1,0 +1,170 @@
+/*--头部 开始--*/
+#header-login{
+    width: 100%;
+    height: 65px;
+    box-shadow: 0 1px 2px gray;
+}
+#header-login .wrap{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+#header-login .wrap .log{
+    position: relative;
+    top: 50%;
+    transform: translate(0 , -50%);
+}
+#header-login .wrap .header-homepage{
+    margin-left: 50px;
+}
+#header-login .wrap div{
+    position: relative;
+    top: 50%;
+    transform: translate(0 , -50%);
+    margin: 0 15px;
+    color: #48576A;
+    cursor: pointer;
+}
+#header-login .wrap div::before{
+    content: "";
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: -1px;
+    width: 100%;
+    height: 65px;
+    border-bottom: 2px solid red;
+    transition: all 1s;
+    z-index: -1;
+}
+#header-login .wrap div:hover::before{
+    display: block;
+}
+#header-login .wrap div:hover{
+    color: red;
+}
+#header-login .wrap .h-nav{
+    position: relative;
+    top: 50%;
+    transform: translate(0 , -50%);
+}
+#header-login .wrap .h-nav li{
+    display: inline-block;
+    position: relative;
+    margin: 0 20px;
+    color: #48576A;
+    cursor: pointer;
+}
+#header-login .wrap .h-nav li::before{
+    content: "";
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: -1px;
+    width: 100%;
+    height: 65px;
+    border-bottom: 2px solid red;
+    transition: all 1s;
+    z-index: -1;
+}
+#header-login .wrap .h-nav li:hover::before{
+    display: block;
+}
+#header-login .wrap .h-nav li:hover{
+    color: red;
+}
+/*--登录页  开始--*/
+#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 420px;
+    height: 300px;
+    box-shadow: 0 0 2px gray;
+}
+#login .log-header{
+    margin: 40px auto 0;
+    width: 300px;
+    height: 35px;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+    line-height: 35px;
+}
+#login-form{
+    position: relative;
+    width: 300px;
+    margin: 20px auto 0;
+}
+#login-form input{
+    text-indent: 5px;
+    outline: none;
+    border: 1px solid #dddddd;
+}
+#login-form .tip-right{
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: -25px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    color: white;
+    border-radius: 50%;
+    background: #36965F;
+}
+#login-form .tip-error{
+    display: none;
+    position: absolute;
+    top: 30px;
+    width: 300px;
+    height: 18px;
+    color: red;
+    font-size: 14px;
+}
+#login-form input:focus{
+    border: 1px solid red;
+}
+#login-form .user-name{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+#login-form .user-pwd{
+    width: 100%;
+    height: 30px;
+}
+#login-form .login-text{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    padding: 3px;
+}
+#login-form .login-text .log-t-auto input{
+    display: none;
+}
+#login-form .login-text .log-t-auto .check{
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 120px;
+    text-indent: 24px;
+    background: url("../img/auto-uncheck.png") no-repeat 0px 3px;
+}
+input[type=checkbox],label[for=login-auto]{
+    cursor: pointer;
+}
+#login #submit{
+    width: 190px;
+    height: 30px;
+    margin: auto;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    background: red;
+    border-radius: 10px;
+    cursor: pointer;
+}

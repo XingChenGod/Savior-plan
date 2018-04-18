@@ -1,0 +1,26 @@
+body,h1,h2,h3,h4,h5,h6,p,dd{margin:0;}
+ul,ol,dl{margin:0;padding:0;list-style:none;}
+img{border:none;vertical-align:middle;display: block}
+a{text-decoration:none;color:inherit;outline:none;}
+body{font:16px/1.5 'Microsoft Yahei',sans-serif;/*sans-serif 是手机默认字体*/}
+*{
+    margin: 0;
+    padding: 0;
+}
+/*-- 浮动 --*/
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+

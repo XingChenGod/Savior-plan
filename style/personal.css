@@ -1,0 +1,312 @@
+/*--个人中心头部 开始--*/
+#header-personal{
+    width: 100%;
+    height: 65px;
+    box-shadow: 0 1px 2px gray;
+}
+#header-personal .wrap{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+#header-personal .wrap .log{
+    position: relative;
+    top: 50%;
+    transform: translate(0 , -50%);
+}
+#header-personal .wrap .header-homepage{
+    margin-left: 50px;
+}
+#header-personal .wrap>div{
+    position: relative;
+    top: 50%;
+    transform: translate(0 , -50%);
+    margin: 0 15px;
+    color: #48576A;
+    cursor: pointer;
+}
+#header-personal .wrap>div::before{
+    content: "";
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: -1px;
+    width: 100%;
+    height: 65px;
+    border-bottom: 2px solid red;
+    transition: all 1s;
+    z-index: -1;
+}
+#header-personal .wrap>div:hover::before{
+    display: block;
+}
+#header-personal .wrap>div:hover{
+    color: red;
+}
+#header-personal .wrap .h-nav{
+    position: relative;
+    top: 50%;
+    transform: translate(0 , -50%);
+    width: 32px;
+    height: 65px;
+}
+#header-personal .wrap .h-nav li.h-personal{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../img/personal/personal.png") no-repeat -2px 15px;
+    cursor: pointer;
+}
+#header-personal .wrap .h-nav li.h-personal div.h-personal-nav{
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: -15px;
+    height: 0;
+    transition: height 1s;
+}
+#header-personal .wrap .h-nav li.h-personal div.h-personal-nav p{
+    width: 65px;
+    text-align: center;
+    color: #48576A;
+}
+#header-personal .wrap .h-nav li.h-personal div.h-personal-nav p:nth-child(1){
+    border-bottom: 1px solid black;
+}
+#header-personal .wrap .h-nav li.h-personal:hover div.h-personal-nav{
+    display: block;
+    height: 50px;
+}
+/*--个人中心  开始--*/
+#personal{
+    width: 80%;
+    margin: auto;
+}
+/*--左边 开始--*/
+#personal .per-left{
+    width: 20%;
+    height: 100%;
+    padding-top: 50px;
+}
+#personal .per-left .per-l-info{
+    width: 100%;
+}
+#personal .per-left .per-l-info img{
+    margin: auto;
+}
+#personal .per-left .per-l-info p{
+    display: block;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#personal .per-left .per-l-info input.per-info-signature{
+    display: none;
+    position: relative;
+    top: 5px;
+    left: 20px;
+    height: 20px;
+    text-indent: 5px;
+}
+#personal .per-left .per-l-nav{
+    width: 100%;
+    margin-top: 50px;
+}
+#personal .per-left .per-l-nav li{
+    height: 50px;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+#personal .per-left .per-l-nav li.on{
+    color: red;
+}
+#personal .per-left .per-l-nav li:hover{
+    color: red;
+}
+/*--右边部分 开始--*/
+#personal .per-right{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    min-height: 800px;
+}
+/*--我的信息 开始--*/
+#personal .per-right>div{
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50% , 0);
+    width: 95%;
+    height: 100%;
+}
+#personal .per-right>div.active{
+    display: block;
+}
+#personal .per-right div h4{
+    padding: 5px 0;
+    border-bottom: 1px solid black;
+}
+#personal .per-right div.per-r-info div.per-r-info-log p{
+    position: relative;
+    margin: 35px 0 0 30px;
+    cursor: pointer;
+}
+#personal .per-right div.per-r-info div.per-r-info-log p input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+#personal .per-right div.per-r-info div.per-r-info-basic div.nickname input.basic-nickname{
+    width: 200px;
+    height: 30px;
+    border: 1px solid gray;
+    text-indent: 5px;
+}
+#personal .per-right div.per-r-info div.per-r-info-basic div.sex>input{
+    -webkit-appearance: none;
+    outline: none;
+    width: 12px;
+    height: 12px;
+    padding: 5px;!important;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    vertical-align: middle;
+    background: white;
+    cursor: pointer;
+}
+#personal .per-right div.per-r-info div.per-r-info-basic div.sex>input:checked{
+    background: red;
+    border: none;
+}
+/*--右边 修改密码--*/
+#personal .per-right div.per-r-revisepwd>div{
+    margin: 50px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+#personal .per-right div.per-r-revisepwd>div div.revise-btn{
+    width: 120px;
+    height: 30px;
+    margin-left: 20px;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    background: #36965F;
+    cursor: pointer;
+}
+#personal .per-right>div>div[class*="btn"]{
+    width: 80px;
+    height: 30px;
+    margin: 20px 0 0 10px;
+    padding-bottom: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 2px gray;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background: red;
+    cursor: pointer;
+}
+#personal .per-right div.per-r-revisepwd>div p{
+    font-weight: bold;
+}
+#personal .per-right div.per-r-revisepwd>div input{
+    outline: none;
+    width: 200px;
+    height: 30px;
+    margin-left: 20px;
+    border: 1px solid gray;
+    text-indent: 5px;
+}
+/*--右边 我的文章 开始--*/
+#personal .per-right div[class*="article"] div.per-r-essay-wrap{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+#personal .per-right div[class*="article"] div.per-r-essay-wrap ul li{
+    float: right;
+    margin: 0 10px;
+    cursor: pointer;
+}
+/*--右边，我的消息--*/
+#personal .per-right .per-r-message{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 800px;
+}
+#personal .per-right .per-r-message .per-r-mes-none{
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50% , 0);
+}
+#personal .per-right .per-r-message .per-r-mes-none p{
+    text-align: center;
+    color: #919191;
+}
+/*--有评论部分  开始--*/
+#personal .per-right .per-r-message .per-r-mes-comment{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 100%;
+}
+#personal .per-right .per-r-message .per-r-mes-comment h3{
+    width: 95%;
+    margin: auto;
+    border-bottom: 1px solid black;
+}
+#personal .per-right .per-r-message .per-r-mes-comment ul{
+    width: 95%;
+    margin: 20px auto;
+}
+#personal .per-right .per-r-message .per-r-mes-comment ul li div.per-r-com-user-title span{
+    margin: 20px 10px 0;
+}
+#personal .per-right .per-r-message .per-r-mes-comment ul li div.per-r-com-user-title span.nickname{
+    font-weight: bold;
+}
+#personal .per-right .per-r-message .per-r-mes-comment ul li div.per-r-com-user-title span.fixed{
+    color: #48576A;
+}
+#personal .per-right .per-r-message .per-r-mes-comment ul li div.per-r-com-user-title span.per-article{
+    color: red;
+}
+#personal .per-right .per-r-message .per-r-mes-comment ul li div.per-r-com-time{
+    margin: 10px 0;
+    text-indent: 60px;
+    color: #48576A;
+}
+#personal .per-right .per-r-message .per-r-mes-comment ul li p.per-r-com-content{
+    margin-bottom: 10px;
+    text-indent: 60px;
+}
+#personal .per-right .per-r-message .per-r-mes-comment ul li div.per-r-com-enter{
+    padding-left: 60px;
+}
+#personal .per-right .per-r-message .per-r-mes-comment ul li div.per-r-com-enter span.per-answer{
+    display: block;
+    text-indent: 40px;
+    background: url("../img/personal/personal-answer.png") no-repeat 0 -5px;
+    cursor: pointer;
+}
+#personal .per-right .per-r-message .per-r-mes-comment ul li div.per-r-com-enter span.per-session{
+    display: block;
+    margin-left: 10px;
+    text-indent: 40px;
+    background: url("../img/personal/personal-session.png") no-repeat 0px -3px;
+    cursor: pointer;
+}
